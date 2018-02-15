@@ -54,13 +54,13 @@ public class IsoData {
 //int	Inquiries number
 //int	Authorizations, number
 //int	Credits, processing fee amount
-//int	Credits, transaction fee amount
-//int	Debits, processing fee amount
-//int	Debits, transaction fee amount
+//int	Credits_transaction_fee_amount
+//int	Debits_processing_fee_amount
+//int	Debits_transaction_fee_amount
 //int	Credits, amount
-//int	Credits, reversal amount
-//int	Debits, amount
-//int	Debits, reversal amount
+//int	Credits_reversal_amount
+//int	Debits_amount
+//int	Debits_reversal_amount
 //int	Original data elements	
 //	File update code
 //	File security code
