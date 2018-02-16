@@ -44,7 +44,7 @@ public class NettyServer {
                  public void initChannel(SocketChannel ch) throws Exception {
 //                     ch.config().setRecvByteBufAllocator(new FixedRecvByteBufAllocator(8*1024*1024));
 //                	 ch.pipeline().addLast(new DelimiterBasedFrameDecoder(8192,Delimiters.lineDelimiter()));
-//                	 ch.pipeline().addLast("decoder", new StringDecoder());
+                	 ch.pipeline().addLast("decoder", new NittyDecoder(4));
 //                	 ch.pipeline().addLast("encoder", new StringEncoder());  
                 	 ch.pipeline().addLast(new NittyServerHandler());
                      //ch.pipeline().addLast(new TimeDecoder(), new DiscardServerHandler());

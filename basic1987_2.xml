@@ -8,7 +8,7 @@
       class="org.jpos.iso.IFA_NUMERIC"/>
   <isofield
       id="1"
-      length="16"
+      length="64"
       name="BIT MAP"
       class="org.jpos.iso.IFA_BITMAP"/>
       <isofield
@@ -111,7 +111,7 @@
       class="org.jpos.iso.IFA_NUMERIC"/>
   <isofield
       id="19"
-      length="3"
+      length="4"
       name="ACQUIRING INSTITUTION COUNTRY CODE"
       pad="true"
       class="org.jpos.iso.IFA_NUMERIC"/>
@@ -129,7 +129,7 @@
       class="org.jpos.iso.IFA_NUMERIC"/>
   <isofield
       id="22"
-      length="3"
+      length="4"
       name="POINT OF SERVICE ENTRY MODE"
       pad="true"
       class="org.jpos.iso.IFA_NUMERIC"/>
@@ -165,7 +165,7 @@
       class="org.jpos.iso.IFA_NUMERIC"/>
   <isofield
       id="28"
-      length="9"
+      length="18"
       name="AMOUNT, TRANSACTION FEE"
       pad="true"
       class="org.jpos.iso.IFA_AMOUNT"/>
@@ -189,10 +189,10 @@
       class="org.jpos.iso.IFA_AMOUNT"/>
   <isofield
       id="32"
-      length="11"
+      length="14"
       name="ACQUIRING INSTITUTION IDENT CODE"
       pad="true"
-     class="org.jpos.iso.IFA_LLNUM"/>
+     class="org.jpos.iso.IFA_NUMERIC"/>
   <isofield
       id="33"
       length="11"
@@ -207,10 +207,10 @@
      class="org.jpos.iso.IFA_LLCHAR"/>
   <isofield
       id="35"
-      length="37"
+      length="34"
       name="TRACK 2 DATA"
       pad="true"
-      class="org.jpos.iso.IFA_LLNUM"/>
+      class="org.jpos.iso.IFA_NUMERIC"/>
   <isofield
       id="36"
       length="104"
@@ -219,7 +219,7 @@
      class="org.jpos.iso.IFA_LLLCHAR"/>
   <isofield
       id="37"
-      length="12"
+      length="24"
       name="RETRIEVAL REFERENCE NUMBER"
       class="org.jpos.iso.IF_CHAR"/>
   <isofield
@@ -239,17 +239,17 @@
       class="org.jpos.iso.IF_CHAR"/>
   <isofield
       id="41"
-      length="8"
+      length="16"
       name="CARD ACCEPTOR TERMINAL IDENTIFICACION"
       class="org.jpos.iso.IF_CHAR"/>
   <isofield
       id="42"
-      length="15"
+      length="30"
       name="CARD ACCEPTOR IDENTIFICATION CODE"
       class="org.jpos.iso.IF_CHAR"/>
   <isofield
       id="43"
-      length="40"
+      length="80"
       name="CARD ACCEPTOR NAME/LOCATION"
       class="org.jpos.iso.IF_CHAR"/>
   <isofield
@@ -279,7 +279,7 @@
       class="org.jpos.iso.IFA_LLLCHAR"/>
   <isofield
       id="49"
-      length="3"
+      length="4"
       name="CURRENCY CODE, TRANSACTION"
       pad="true"
       class="org.jpos.iso.IF_CHAR"/>
@@ -338,7 +338,7 @@
       class="org.jpos.iso.IFA_LLLCHAR"/>
   <isofield
       id="60"
-      length="10"
+      length="14"
       name="RESERVED PRIVATE"
       class="org.jpos.iso.IF_CHAR"/>
   <isofield
@@ -349,14 +349,32 @@
       class="org.jpos.iso.IFA_LLLCHAR"/>
   <isofield
       id="62"
-      length="999"
+      length="18"
       name="PAYMENT SERVICE FIELDS"
-      class="org.jpos.iso.IFA_LLLCHAR"/>
+      class="org.jpos.iso.IF_CHAR"/>
+      <!--  
+  <isofieldpackager
+      id="62"  
+      length="255"
+      name="FIELD 62"
+      class="org.jpos.iso.IFB_LLHBINARY"
+      packager="org.jpos.iso.packager.Base1SubFieldPackager">
+      <isofield
+          id="0"
+          length="64"
+          name="Bit Map"
+          class="org.jpos.iso.IFA_BITMAP"/>
+      <isofield
+          id="5"
+          length="2"
+          name="Dummy"
+          class="org.jpos.iso.IFA_NUMERIC"/>
+  </isofieldpackager>-->
   <isofield
       id="63"
-      length="999"
+      length="14"
       name="RESERVED PRIVATE"
-      class="org.jpos.iso.IFA_LLLCHAR"/>
+      class="org.jpos.iso.IF_CHAR"/>
   <isofield
       id="64"
       length="8"

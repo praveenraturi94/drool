@@ -33,5 +33,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/renovite/Downloads/jpos.jar"/>
+	<classpathentry kind="lib" path="/Users/renovite/Downloads/jdom.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
